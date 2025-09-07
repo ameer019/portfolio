@@ -2,14 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Signup | Ameer Basheer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup - Ameer Basheer</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Signup Page</h1>
-  </header>
-
   <nav>
     <ul>
       <li><a href="index.html">Home</a></li>
@@ -20,35 +17,34 @@
     </ul>
   </nav>
 
-  <main>
+  <section class="content">
+    <h1>Signup Form</h1>
     <form>
-      <label>First Name: <input type="text" name="fname"></label><br>
-      <label>Last Name: <input type="text" name="lname"></label><br>
-      <label>Email: <input type="email" name="email"></label><br>
-      <label>Password: <input type="password" name="password"></label><br>
-      <label>Confirm Password: <input type="password" name="confirm"></label><br>
-      <label>Date of Birth: <input type="date" name="dob"></label><br>
-      <label>Gender: 
-        <select>
-          <option>Male</option>
-          <option>Female</option>
-          <option>Other</option>
-        </select>
-      </label><br>
-      <label>Phone: <input type="tel" name="phone"></label><br>
-      <label>Address: <input type="text" name="address"></label><br>
-      <label>City: <input type="text" name="city"></label><br>
-      <label>State: <input type="text" name="state"></label><br>
-      <label>Country: <input type="text" name="country"></label><br>
-      <label>Pincode: <input type="number" name="pincode"></label><br>
-      <label>Course: <input type="text" name="course"></label><br>
-      <label>Skills: <input type="text" name="skills"></label><br>
-      <button type="submit">Register</button>
+      <input type="text" placeholder="First Name" required>
+      <input type="text" placeholder="Last Name" required>
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Password" required>
+      <input type="password" placeholder="Confirm Password" required>
+      <input type="date" required>
+      <input type="text" placeholder="Phone Number" required>
+      <input type="text" placeholder="Address" required>
+      <input type="text" placeholder="City" required>
+      <input type="text" placeholder="State" required>
+      <input type="text" placeholder="Country" required>
+      <input type="text" placeholder="Pincode" required>
+      <select>
+        <option>Male</option>
+        <option>Female</option>
+        <option>Other</option>
+      </select>
+      <input type="text" placeholder="College/University" required>
+      <input type="text" placeholder="Course" required>
+      <button type="submit">Signup</button>
     </form>
-  </main>
+  </section>
 
   <footer>
-    <p>© 2025 Ameer Basheer | Portfolio Website</p>
+    <p>© 2025 Ameer Basheer | Portfolio</p>
   </footer>
 </body>
 </html>

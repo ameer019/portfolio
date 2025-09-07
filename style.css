@@ -34,7 +34,7 @@ nav ul li a:hover {
 /* Hero Section */
 .hero {
   text-align: center;
-  padding: 100px 20px;
+  padding: 60px 20px;
   background: linear-gradient(135deg, #42a5f5, #7e57c2);
   color: white;
 }
@@ -56,6 +56,26 @@ nav ul li a:hover {
   background: #fff;
   color: #7e57c2;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  margin-bottom: 20px;
+}
+
+/* Content Section */
+.content {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+.content h1, .content h2 {
+  color: #7e57c2;
 }
 
 /* Skills Section */
@@ -88,8 +108,6 @@ nav ul li a:hover {
   transform: scale(1.1);
   cursor: pointer;
 }
-
-/* Individual Skill Colors */
 .python { background: #4b8bbe; }
 .c { background: #00897b; }
 .java { background: #f57c00; }
@@ -99,11 +117,51 @@ nav ul li a:hover {
 .canva { background: #00c4cc; }
 .leader { background: #8e24aa; }
 
+/* Gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+.gallery img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Forms */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+form input, form select, form textarea, form button {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+}
+form button {
+  background: #7e57c2;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+form button:hover {
+  background: #42a5f5;
+}
+
 /* Footer */
 footer {
   text-align: center;
   padding: 20px;
   background: #222;
   color: #fff;
-  margin-top: 30px;
+  margin-top: 30px;
 }
